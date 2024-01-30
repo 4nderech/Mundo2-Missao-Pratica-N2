@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenando com Javascript e DOM</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- JavaScript-->
+    <script src="ordenando.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../style/formatos.css">
+
+</head>
+
+<body class="bg-warning">
+
+    <header>
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav px-1">
+                <li><a href="/home.html" class="nav-link">Home</a></li>
+                <li><a href="ordenando.html" class="nav-link" id="active">Procedimento 01</a></li>
+                <li><a href="../procedimento2/receitas.html" class="nav-link">Procedimento 02</a></li>
+                <li><a href="../procedimento3/" class="nav-link">Procedimento 03</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mt-4 container-fluid">
+        <h1 class="fw-bold mb-4">Ordenando Valores</h1>
+        <div class="mb-3">
+            <label for="valor" class="form-label fw-bold">Valor:</label>
+            <input type="number" class="form-control" id="valor">
+        </div>
+        <div class="botoes_adicionar">
+            <button class="btn btn-primary" onclick="add()">Adicionar</button>
+            <button type="submit" class="btn btn-primary" onclick="limpar()">Limpar</button>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <label for="selects" class="form-label fw-bold"> Escolha a função de ordenação:</label>
+            <br />
+            <select class="form-select" id="selects">
+                <option value="bubble_sort" selected>Bubble Sort</option>
+                <option value="selection_sort">Selection Sort</option>
+                <option value="quick_sort">Quick Sort</option>
+            </select>
+        </div>
+        <div class="botoes_ordenar">
+            <button type="submit" class="btn btn-primary" onclick="ordenar()">Ordenar</button>
+            <button type="submit" class="btn btn-primary" onclick="misturar()">Misturar</button>
+        </div>
+        <hr>
+        <div>
+            <label for="valores" class="form-label fw-bold">Valores:</label>
+            <ul id="valores">
+            </ul>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>&#169;&nbsp;Anderson Rech 2024</a></p>
+    </footer>
+
+</body>
+
+</html>

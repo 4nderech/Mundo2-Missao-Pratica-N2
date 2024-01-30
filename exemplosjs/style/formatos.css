@@ -1,0 +1,32 @@
+nav {
+    background-color: rgb(60, 0, 60);
+    text-align: center;
+    height: 60px !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: rgb(60, 0, 60);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 25px !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+#active {
+    color: gold !important;
+}
