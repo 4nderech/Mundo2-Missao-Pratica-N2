@@ -30,3 +30,12 @@ footer {
 #active {
     color: gold !important;
 }
+
+.main_container {
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
